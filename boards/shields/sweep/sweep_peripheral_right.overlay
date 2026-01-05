@@ -1,0 +1,5 @@
+#include "sweep-layout.dtsi"
+
+&default_transform {
+    col-offset = <17>;
+};
