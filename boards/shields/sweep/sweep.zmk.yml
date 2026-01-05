@@ -1,0 +1,16 @@
+file_format: "1"
+id: sweep
+name: Sweep
+type: shield
+url: https://github.com/conlank/zmk-keyboard-sweep/tree/main
+requires:
+  - pro_micro
+  - xiao_ble
+features:
+  - keys
+  - display
+  - studio
+siblings:
+  - sweep_central_dongle
+  - sweep_peripheral_left
+  - sweep_peripheral_right

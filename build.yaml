@@ -17,4 +17,27 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
----
+include:
+  - board: xiao_ble
+    shield: sweep_central_dongle dongle_screen
+    artifact-name: sweep_central_dongle
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+  - board: nice_nano@2.0.0
+    shield: sweep_peripheral_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: sweep_peripheral_left
+
+  - board: nice_nano@2.0.0
+    shield: sweep_peripheral_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: sweep_peripheral_right
+
+  - board: nice_nano@2.0.0
+    shield: settings_reset
+    artifact-name: nicenano_settings_reset
+
+  - board: xiao_ble
+    shield: settings_reset
+    artifact-name: xiao_settings_reset
